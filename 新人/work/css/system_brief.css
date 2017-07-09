@@ -1,0 +1,11 @@
+/* 文字部分 */
+#wrap {
+  height: 11.62rem;
+  padding: 0.3rem 0.3rem 0.1rem 0.3rem;
+  overflow: hidden;
+}
+#wrap .text {
+  padding-bottom: 0.4rem;
+  font-size: 0.32rem;
+  line-height: 0.44rem;
+}

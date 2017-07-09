@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,user-scalable=no"/>
+		<title></title>
+		<link rel="stylesheet" href="./css/reset.css">
+		<link rel="stylesheet" href="./css/company_desc.css">
+		<script src="./js/zepto.min.js"></script>
+		<script src="./js/getRem.js"></script>
+		<script src="./js/iscroll.js"></script>
+		<script>
+			var myscroll;
+			function loaded(){
+				myscroll = new IScroll(".desc_wrap", {
+					mouseWheel: true, //是否监听鼠标滚轮事件
+					scrollbars: false,      //是否显示默认滚动条
+					preventDefault: true,//是否屏蔽默认事件
+					probeType: 3,//需要使用 iscroll-probe.js 才能生效 probeType ： 1   滚动不繁忙的时候触发;probeType ： 2   滚动时每隔一定时间触;probeType ： 3   每滚动一像素触发一次
+				});
+			}
+			window.addEventListener("DOMContentLoaded",loaded,false);
+        </script>
+	</head>
+	<body>
+		<header id="header">
+			
+		</header>
+		<section id="wrap">
+			<h3 class="title">
+				杭州开启网络科技有限公司
+			</h3>
+			<div class="desc_wrap">
+				<p class="desc">
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp杭州开启网络科技有限公司成立于2010年初，注册资金1000万人民币。公司坐落于环境优美的西子湖畔，依托“天堂硅谷”--杭州的区位优势及政府大力扶持的政策优势，公司发展迅猛，目前已成为专业从事开发和运营地方互联网应用服务平台、提供互联网安全解决方案和电子商务服务的高新技术企业。<br>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp公司始终秉持为用户提供优质完善服务的宗旨，经过数年的悉心运营，公司主打产品K7游戏平台用户中树立了良好的口碑。与此同时，开启运营的电子商务服务项目、互联网安全服务也在稳步前进中，期望为用户提供更多、更完善的服务。<br>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp公司通过技术团队的不断努力，获得了多项实用新型专利证书与软件著作权，并承担了杭州市信息服务服务业项目等政府重点项目的合作。除此之外，公司非常荣幸的成为浙江省游戏行业协会会员单位、杭州市网络安全协会理事单位、青年就业创业见习基地。<br>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp公司通过技术团队的不断努力，获得了多项实用新型专利证书与软件著作权，并承担了杭州市信息服务服务业项目等政府重点项目的合作。除此之外，公司非常荣幸的成为浙江省游戏行业协会会员单位、杭州市网络安全协会理事单位、青年就业创业见习基地。<br>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp公司通过技术团队的不断努力，获得了多项实用新型专利证书与软件著作权，并承担了杭州市信息服务服务业项目等政府重点项目的合作。除此之外，公司非常荣幸的成为浙江省游戏行业协会会员单位、杭州市网络安全协会理事单位、青年就业创业见习基地。
+				</p>
+			</div>
+		</section>
+	</body>
+</html>

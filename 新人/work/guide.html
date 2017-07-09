@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,user-scalable=no"/>
+		<title></title>
+		<link rel="stylesheet" href="./css/reset.css">
+		<link rel="stylesheet" href="./css/guide.css">
+		<script src="./js/zepto.min.js"></script>
+		<script src="./js/getRem.js"></script>
+		<script src="./js/iscroll.js"></script>
+		<script>
+			var myscroll;
+			function loaded(){
+				myscroll = new IScroll("#wrap", {
+					mouseWheel: true, //是否监听鼠标滚轮事件
+					scrollbars: false,      //是否显示默认滚动条
+					preventDefault: true,//是否屏蔽默认事件
+					probeType: 3,//需要使用 iscroll-probe.js 才能生效 probeType ： 1   滚动不繁忙的时候触发;probeType ： 2   滚动时每隔一定时间触;probeType ： 3   每滚动一像素触发一次
+				});
+			}
+			window.addEventListener("DOMContentLoaded",loaded,false);
+        </script>
+	</head>
+	<body>
+		<header id="header">
+			
+		</header>
+		<section id="wrap">
+			<ul class="guide_list">
+				<li class="guide_item">
+					<a href="javascript:;">
+						公司简介
+					</a>	
+				</li>
+				<li class="guide_item">
+					<a href="javascript:;">
+						制度简介
+					</a>	
+				</li>
+				<li class="guide_item">
+					<a href="javascript:;">
+						周边指南
+					</a>	
+				</li>
+				<li class="guide_item">
+					<a href="javascript:;">
+						房屋租赁
+					</a>	
+				</li>
+				<li class="guide_item">
+					<a href="javascript:;">
+						公司简介
+					</a>	
+				</li>
+				<li class="guide_item">
+					<a href="javascript:;">
+						公司简介
+					</a>	
+				</li>
+			</ul>
+		</section>
+		<footer id="footer">
+			<a href="javascript:;">
+				<input class="btn" type="button" value="下一步">	
+			</a>
+		</footer>
+	</body>
+</html>

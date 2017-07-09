@@ -1,0 +1,66 @@
+@r:50rem;
+/* 内容 */
+#wrap{
+	width: 100%;
+	height: 100%;
+	padding-top: 31/@r;
+	background-color: #f6f9f9;
+	color: #222;
+	.pic_wrapper{
+		padding: 0 20/@r;
+		width: 335/@r;
+		height: 420/@r;
+		overflow: hidden;
+		.pic_list{
+			.pic_item{
+				float: left;
+				.pic_wrap{
+					position: relative;
+					width: 335/@r;
+					height: 315/@r;
+					margin-top: 105/@r;
+					padding: 117/@r 20/@r 25/@r;
+					box-sizing: border-box;
+					background-color: #FFF;
+					box-shadow: 0 2px 4px 0 rgba(139,139,139,0.30);
+					.pic{
+						position: absolute;
+						top: -105/@r;
+						width: 295/@r;
+						height: 222/@r;
+					}
+					.desc{
+						overflow: hidden;
+						height: 163/@r;
+						.text_area{
+							.title{
+								font-size: 20/@r;
+								line-height: 30/@r;
+							}
+							.text{
+								font-size: 14/@r;
+								line-height: 21/@r;
+							}	
+						}
+					}
+				}
+			}
+		}	
+	}
+	.page_wrap{
+		height: 33/@r;
+		line-height: 33/@r;
+		text-align: center;
+		font-size: 24/@r;
+		.prev{	
+			display: inline-block;
+			padding: 0 31/@r 0 20/@r;
+			color: rgba(34,34,34,0.30);
+		}
+		.next{
+			display: inline-block;
+			padding: 0 20/@r 0 31/@r;
+			color: rgba(34,34,34,0.30);
+		}
+	}
+}

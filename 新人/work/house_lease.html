@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,user-scalable=no"/>
+		<title></title>
+		<link rel="stylesheet" href="./css/reset.css">
+		<link rel="stylesheet" href="./css/house_lease.css">
+		<script src="./js/zepto.min.js"></script>
+		<script src="./js/getRem.js"></script>
+		<script src="./js/iscroll.js"></script>
+		<script>
+			var myscroll;
+			function loaded(){
+				myscroll = new IScroll("#wrap", {
+					mouseWheel: true, //是否监听鼠标滚轮事件
+					scrollbars: false,      //是否显示默认滚动条
+					preventDefault: true,//是否屏蔽默认事件
+					probeType: 3,//需要使用 iscroll-probe.js 才能生效 probeType ： 1   滚动不繁忙的时候触发;probeType ： 2   滚动时每隔一定时间触;probeType ： 3   每滚动一像素触发一次
+				});
+			}
+			window.addEventListener("DOMContentLoaded",loaded,false);
+        </script>
+	</head>
+	<body>
+		<header id="header">
+			
+		</header>
+		<section id="wrap">
+			<ul class="perimeter_list">
+				<li class="perimeter_item">
+					<a href="javascript:;">
+						<div class="title">
+							<span class="color1"></span>
+							<h3>和苑小区</h3>
+						</div>
+						<div class="hr_10"></div>
+						<div class="text">
+							<i class="iconfont icon_style">&#xe602</i><span>三室2厅一卫</span><i class="iconfont icon_style">&#xe603</i><span>5500左右</span><i class="iconfont icon_style">&#xe605</i><span>公交10分钟</span>
+						</div>
+						<div class="hr_10"></div>
+						<p class="desc">简单装修，家电齐全，个人转租，现在房间居住2个男士。</p>
+					</a>
+				</li>
+				<li class="perimeter_item">
+					<a href="javascript:;">
+						<div class="title">
+							<span class="color2"></span>
+							<h3>桃园春居</h3>
+						</div>
+						<div class="hr_10"></div>
+						<div class="text">
+							<i class="iconfont icon_style">&#xe602</i><span>三室2厅一卫</span><i class="iconfont icon_style">&#xe603</i><span>5500左右</span><i class="iconfont icon_style">&#xe605</i><span>公交10分钟</span>
+						</div>
+						<div class="hr_10"></div>
+						<p class="desc">简单装修，家电齐全，个人转租，现在房间居住2个男士。</p>
+					</a>
+				</li>
+			</ul>
+		</section>
+	</body>
+</html>
+
+

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,user-scalable=no"/>
+		<title></title>
+		<link rel="stylesheet" href="./css/reset.css">
+		<link rel="stylesheet" href="./css/pic.css">
+		<script src="./js/zepto.min.js"></script>
+		<script src="./js/getRem.js"></script>
+		<script src="./js/iscroll.js"></script>
+		<script>
+			var myscroll;
+			function loaded(){
+				myscroll = new IScroll(".desc", {
+					mouseWheel: true, //是否监听鼠标滚轮事件
+					scrollbars: false,      //是否显示默认滚动条
+					preventDefault: true,//是否屏蔽默认事件
+					probeType: 3,//需要使用 iscroll-probe.js 才能生效 probeType ： 1   滚动不繁忙的时候触发;probeType ： 2   滚动时每隔一定时间触;probeType ： 3   每滚动一像素触发一次
+				});
+			}
+			window.addEventListener("DOMContentLoaded",loaded,false);
+        </script>
+	</head>
+	<body>
+		<header id="header">
+			
+		</header>
+		<section id="wrap">
+			<div class="pic_wrapper">
+				<ul class="pic_list">
+					<li class="pic_item">
+						<div class="pic_wrap">
+							<div class="pic">
+								<img src="./images/pic.png" alt="" width="100%" height="100%">
+							</div>
+							<div class="hr_10"></div>
+							<div class="desc">
+								<div class="text_area">
+									<h3 class="title">徽杭古道行，<br>一次身体与心灵的旅程</h3>
+									<div class="hr_7"></div>
+									<p class="text">徽杭古道，位于安徽省绩溪县伏岭镇，古道始建于唐，已历经1000多年历史，是中国继”丝绸之路”“茶马古道”之后的第三条著名古道，在历史上曾经产生过巨大的政治、经济、文化作用，同时，也是一条集自然风光及神秘文化的走廊。[1]  是中国第一古道。徽杭古道自皖南绩溪县临溪镇湖里村起，经仁里，汪村，瀛洲、龙川、到伏岭镇的湖村，经江南村“江南第一关”、遥遥岭、马头岭、雪堂岭到达浙西临安市马啸乡止，全长75公里，是一条文化内涵深厚的徽商古道，保存有众多的古村落、古关口、古石板路、古桥、古茶亭、古树等。整条古道依龙须山，傍登源河，为绩溪县主要风水龙脉，古道逍遥河更是新安江源头。
+									</p>	
+								</div>
+							</div>
+						</div>	
+					</li>
+					<li class="pic_item">
+						<div class="pic_wrap">
+							<div class="pic">
+								<img src="./images/pic_2.jpg" alt="" width="100%" height="100%">
+							</div>
+							<div class="desc">
+								<div class="text_area">
+									<div class="hr_10"></div>
+									<h3 class="title">2222222222，<br>3333333333333333333333</h3>
+									<div class="hr_7"></div>
+									<p class="text">2222222222222222222222222222222222222222222222222222222222222222222222222222
+									</p>	
+								</div>
+							</div>
+						</div>	
+					</li>
+				</ul>
+			</div>
+			<div class="hr_15"></div>
+			<div class="page_wrap">
+				<i class="iconfont prev">&#xe604</i><span class="pic_num">1/8</span><i class="iconfont next">&#xe601</i>
+			</div>
+		</section>
+		<footer id="footer">
+			<a href="javascript:;">
+				<input class="btn" type="button" value="下一步">	
+			</a>
+		</footer>
+		<script type="text/javascript">
+			var $Prev = $('.prev');
+			var $Next = $('.next');
+			var len = $('.pic_item').length;
+			var num = 0;
+			$('.pic_num').html(num + 1 + ' / ' + len)
+			// $('.pic_item').hide();
+			// 初始化
+			function fnTab(){
+				$('.pic_num').html(num + 1 + ' / ' + len);
+				$.each($('.pic_item'), function(index, item){
+					$(item).hide();
+				})
+				$('.pic_item').eq(num).show();
+			}
+			fnTab();
+			
+			$Prev.click(function (){
+				num --;
+				if( num == -1 ){
+					num = len - 1;
+				}
+				fnTab();
+			});
+			$Next.click(function (){
+				num ++;
+				if( num == len ){
+					num = 0;
+				}
+				fnTab();
+			});
+		</script>
+	</body>
+</html>

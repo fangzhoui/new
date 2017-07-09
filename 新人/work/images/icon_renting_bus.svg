@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_renting_bus</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="租房信息列表" transform="translate(-228.000000, -51.000000)" fill="#FF5E3B">
+            <g id="icon_renting_bus">
+                <path d="M239,54 L229,54 L229,57 L239,57 L239,54 Z M239,53 L239,52 L229,52 L229,53 L239,53 Z M239,58 L229,58 L229,61 L239,61 L239,58 Z M228,51 L240,51 L240,62 L228,62 L228,51 Z M230,59 L232,59 L232,60 L230,60 L230,59 Z M236,59 L238,59 L238,60 L236,60 L236,59 Z M230,62 L232,62 C232,62.5522847 231.552285,63 231,63 C230.447715,63 230,62.5522847 230,62 Z M236,62 L238,62 C238,62.5522847 237.552285,63 237,63 C236.447715,63 236,62.5522847 236,62 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

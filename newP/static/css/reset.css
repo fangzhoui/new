@@ -1,0 +1,118 @@
+a,
+input,
+button {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input,
+button {
+    -webkit-appearance: none;
+    border-radius: 0;
+    border:none;
+}
+body {
+    margin:0;
+    -webkit-user-select:none;
+}
+body * {
+    -webkit-user-select:none;
+    font-family: PingFang-SC-Medium;
+}
+body {
+    -webkit-text-size-adjust: 100%;
+}
+h1, h2, h3{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+ul, p{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img{
+    vertical-align: top;
+}
+html,
+body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* 公共 */
+.hr_18 {
+  height: 0.36rem;
+}
+.hr_15 {
+  height: 0.30rem;
+}
+.hr_10 {
+  height: 0.2rem;
+}
+.hr_7 {
+  height: 0.14rem;
+}
+
+/* 头部 */
+#header {
+  height: 0.88rem;
+}
+
+/* 下一步 */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1.68rem;
+  text-align: center;
+  font-size: 0;
+  padding: 0.4rem 1.72rem;
+  box-sizing: border-box;
+  z-index: 50;
+  background-color: #FFF;
+}
+.footer .btn {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(left, #ffca3d, #ff5e3b);
+  /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #ffca3d, #ff5e3b);
+  /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #ffca3d, #ff5e3b);
+  /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #ffca3d, #ff5e3b);
+  color: #FFF;
+  font-size: 0.32rem;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font_icon/iconfont.eot');
+  src: url('../font_icon/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../font_icon/iconfont.woff') format('woff'),
+  url('../font_icon/iconfont.ttf') format('truetype'),
+  url('../font_icon/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont{
+  font-family:"iconfont" !important;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-gengduo:before { content: "\e601"; }
+
+.icon-icon_renting:before { content: "\e602"; }
+
+.icon-icon_renting_price:before { content: "\e603"; }
+
+.icon-fanhui:before { content: "\e604"; }
+
+.icon-icon_renting_bus:before { content: "\e605"; }
